@@ -25,7 +25,7 @@ pipeline {
 
         stage('SonarQube analysis') {         // 8  // Creates a stage named 'SonarQube analysis'
             environment {                     // 9  // Defines environment variables specific to this stage
-                scannerHome = tool 'saidemy-sonar-scanner'  
+                scannerHome = tool 'sonarqube-scanner'  
                                               // Sets the SonarQube scanner tool
             }                                 // 9  // Ends the environment block for this stage
 
