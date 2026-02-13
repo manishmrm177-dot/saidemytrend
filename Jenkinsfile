@@ -30,7 +30,7 @@ pipeline {
             }                                 // 9  // Ends the environment block for this stage
 
             steps {                           // 10  // Defines the steps that will be executed in this stage
-                withSonarQubeEnv('saidemy-sonarqube-server') {
+                withSonarQubeEnv('sonarqube-server') {
                                               // Executes the SonarQube analysis within the SonarQube environment
                     sh "${scannerHome}/bin/sonar-scanner"  
                                               // Runs the SonarQube scanner tool
